@@ -1,0 +1,14 @@
+<h1>ttes les Blagues</h1>
+<!--<p>Find me in app/views/blagues/index.html.erb</p>-->
+
+<div><%= link_to 'creer une nouvelle blague',  new_blague_path %></div>
+<br>
+<hr>
+<%@blagues.each do |blague|%>
+  <div><h1><%= blague.nom %></h1></div>
+  <div><h3>Contenu: </h3> <%= blague.contenu %></div>
+  <div><small>publié par: <%= blague.auteur %></small></div>
+  <br>
+  <div><%= link_to 'voir la blague', blague_path(blague) %></div>
+  <hr>
+<% end %>

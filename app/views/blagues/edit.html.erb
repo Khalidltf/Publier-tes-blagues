@@ -1,0 +1,24 @@
+<h2> Modifier la blague</h2>
+<div><%= link_to "ttes les Blagues", blagues_path %></div>
+<hr>
+
+<%= form_with model: @blague, local: true do |form|%>
+  <p>
+    <%= form.label :nom %>
+    <%= form.text_field :nom %>
+  </p>
+
+   <p>
+    <%= form.label :contenu %>
+    <%= form.text_area :contenu %>
+  </p>
+
+   <p>
+    <%= form.label :auteur %>
+    <%= form.text_field :auteur %>
+  </p>
+
+  <p>
+    <%= form.submit "modifier la blague"%>
+  </p>
+<% end %>

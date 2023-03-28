@@ -1,0 +1,25 @@
+
+.container {
+  background-image: url("nick-fewings-fIEywSUhwFU-unsplash.jpg");
+  height: 100vh;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+ }
+
+
+
+
+.hometitle {
+  color: rgb(19, 192, 255);
+}
+
+p{
+  color: white;
+}

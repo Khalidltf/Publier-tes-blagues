@@ -1,0 +1,19 @@
+<h1>Blagues#show</h1>
+<!--<p>Find me in app/views/blagues/show.html.erb</p>-->
+<div><%= link_to "ttes les Blagues", blagues_path %></div>
+<div><%= link_to 'Modifier la blagues', edit_blague_path %></div>
+
+
+<hr>
+<!---->
+<div><h1><%= @blague.nom %></h1></div>
+<div><h3>Contenu: </h3> <%= @blague.contenu %></div>
+<div><small>publié par: <%= @blague.auteur %></small></div>
+
+<!-- delete button-->
+<br>
+<div><%= button_to "Destroy", blague_del_path(@blague), method: :delete, form: { data: { turbo: true, turbo_confirm: "Are you sure?" } }, class: "delete-link" %>
+</div>
+
+
+<br>
